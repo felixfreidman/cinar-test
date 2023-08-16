@@ -10,7 +10,7 @@
     <title>Лада Армения</title>
 </head>
 
-<body>
+<body class="">
     <header class="header">
         <div class="header-row">
             <a href="/" class="logo">
@@ -29,26 +29,50 @@
         <div class="header-row">
             <nav class="header-navigation">
                 <a href="" class="nav-link">
-                    <span class="nav-link__value">Главная</span>
+                    <span class=" v">Главная</span>
                 </a>
-                <a href="" class="nav-link nav-link--complex">
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">О нас</span>
-                </a>
-                <a href="" class="nav-link nav-link--complex">
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">Туры</span>
-                </a>
-                <a href="" class="nav-link nav-link--complex">
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">Экскурсии</span>
-                </a>
-                <a href="" class="nav-link nav-link--complex">
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">Направления</span>
-                </a>
-                <a href="" class="nav-link nav-link--complex">
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">Проживание</span>
-                </a>
-                <a href="" class="nav-link nav-link--complex">
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
+                <div href="" class="nav-link nav-link--complex">
                     <span class="nav-link__value">Об армении</span>
-                </a>
+                    <div class="link-container">
+                        <a href="#" class="nav-link">1 Главная Главная</a>
+                        <a href="#" class="nav-link">2 Главная Главная</a>
+                    </div>
+                </div>
                 <a href="" class="nav-link">
                     <span class="nav-link__value">Контакты</span>
                 </a>
@@ -124,6 +148,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- service-card--active -->
                 <div class="service-card">
                     <img src="./assets/images/content/service4.png" alt="">
                     <div class="service-card__content">
@@ -176,7 +201,14 @@
             </form>
         </div>
     </main>
-
+    <div class="modal-callback js-hide">
+        <form action="" class="call-form">
+            <div class="form-header">Заказать звонок</div>
+            <input type="text" name="userOrderName" placeholder="Ваше имя">
+            <input type="tel" name="userOrderPhone" placeholder="Ваш телефон">
+            <button type="submit" class="submit-form__button">Забронировать</button>
+        </form>
+    </div>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/main.min.js"></script>
 

@@ -1,30 +1,22 @@
+window.addEventListener("load", (event) => {
+    const allServiceCards = document.querySelectorAll('.service-card');
+    allServiceCards.forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('service-card--active')
+        })
+    })
 
-//   $('#btn-menu-mob').click(function(e) {
-//       e.preventDefault();
-//       $('.header__svg-mob').addClass('is-active');
+    const callButton = document.querySelector('.call-button');
+    const modalWindow = document.querySelector('.modal-callback')
+    callButton.addEventListener('click', () => {
+        modalWindow.classList.remove('js-hide')
+        document.querySelector('body').classList.add('modal-opened')
+    })
+    modalWindow.addEventListener('click', (event) => {
+        if (event.target === modalWindow) {
+            modalWindow.classList.add('js-hide')
+            document.querySelector('body').classList.remove('modal-opened')
+        }
+    })
+});
 
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//     $('body').css('overflow', 'hidden');
-//     $('.page').animate({ 
-//         right: '190px' 
-//     }, 200); 
-// });
-
-// $('.menu-mobile__svg-close').click(function(e) {
-//     e.preventDefault();
-//     $('.header__svg-mob').removeClass('is-active');
-//     $('#menu-mobile').animate({ 
-//       right: '-207px' 
-//   }, 300);
-//   $('body').css('overflow', 'auto');
-//   $('.page').animate({ 
-//       right: '0px' 
-//   }, 200); 
-// });
-
- 
